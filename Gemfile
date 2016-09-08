@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
-#gem 'pg'
+gem 'pg'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 #gem 'taps'
@@ -43,15 +43,11 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem "pg"
 end
 
 group :development, :test do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
+  gem "sqlite3"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
