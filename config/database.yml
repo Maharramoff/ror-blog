@@ -1,14 +1,13 @@
 development:
   adapter: postgresql
   encoding: utf8
-  database: development
-  host: localhost
+  database: df3rmb3qtccqkc
   pool: 5
   timeout: 5000
-  username: root
-  password: S3cur1ty
+  username: uhbmzujseznrem
+  password: OuWG5mmfbxGWOylIrRPAePDSGe
   port: 5432
-  host: localhost
+  host: ec2-54-228-213-113.eu-west-1.compute.amazonaws.com
 
 test:
   adapter: postgresql
@@ -24,10 +23,10 @@ test:
 production:
   adapter: postgresql
   encoding: utf8
-  database: production
+  database: df3rmb3qtccqkc
   pool: 5
   timeout: 5000
-  username: root
-  password: S3cur1ty
+  username: uhbmzujseznrem
+  password: OuWG5mmfbxGWOylIrRPAePDSGe
   port: 5432
-  host: localhost
+  host: ec2-54-228-213-113.eu-west-1.compute.amazonaws.com
