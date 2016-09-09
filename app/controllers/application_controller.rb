@@ -1,6 +1,12 @@
 class ApplicationController < ActionController::Base
 	protect_from_forgery with: :exception
+	before_filter :set_locale
 
-	I18n.locale = :az
-	#config.I18n.default_locale = :az
+	private
+
+	 # set the language
+	def set_locale
+		I18n.locale = :az
+	end
+	
 end
